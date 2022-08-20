@@ -1,8 +1,5 @@
-print('名前を入力してください。')
-name = input()
-print('年齢を入力してください。')
-age = int(input())
-
+name = 'Carol'
+age = 3000
 if name == 'Alice':
     print('やぁ、Alice。')
 elif age < 12:
