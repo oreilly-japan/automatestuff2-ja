@@ -1,5 +1,5 @@
 #! python3
-# combinePdfs.py - カレントディレクトリの全PDFをひとつのPDFに結合する
+# combinePdfs.py - カレントディレクトリの全PDFを1つのPDFに結合する
  
 import PyPDF2, os  # ❶
 

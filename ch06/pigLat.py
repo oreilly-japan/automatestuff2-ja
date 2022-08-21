@@ -48,5 +48,5 @@ for word in message.split():
     # wordの先頭と末尾にあった英字でない文字を元に戻す
     pig_latin.append(prefix_non_letters + word + suffix_non_letters)
 
-# 単語のリストをひとつの文字列に連結して表示する
+# 単語のリストを1つの文字列に連結して表示する
 print(' '.join(pig_latin))

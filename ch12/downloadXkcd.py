@@ -1,5 +1,5 @@
 #! python3
-# downloadXkcd.py - XKCDコミックをひとつずつダウンロードする
+# downloadXkcd.py - XKCDコミックを1つずつダウンロードする
 
 import requests, os, bs4
 import time

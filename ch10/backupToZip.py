@@ -1,10 +1,10 @@
 #! python3
-# backupToZip.py - フォルダ全体を連番付きZIPファイルにコピーする
+# backupToZip.py - ディレクトリ全体を連番付きZIPファイルにコピーする
 
 import zipfile, os  # ❶
 
 def backup_to_zip(folder):
-    # フォルダ全体をZIPファイルにバックアップする
+    # ディレクトリ全体をZIPファイルにバックアップする
 
     folder = os.path.abspath(folder) # folderを絶対パスにする
 
@@ -21,12 +21,12 @@ def backup_to_zip(folder):
     print(f'Creating {zip_filename}')
     backup_zip = zipfile.ZipFile(zip_filename, 'w')  # ❶
 
-    # フォルダのツリーを渡り歩いてその中のファイルを圧縮する
+    # ディレクトリのツリーを渡り歩いてその中のファイルを圧縮する
     for foldername, subfolders, filenames in os.walk(folder):  # ❶
         print(f'Adding files in {foldername}...')
-        # 現在のフォルダをZIPファイルに追加する
+        # 現在のディレクトリをZIPファイルに追加する
         backup_zip.write(foldername)  # ❷
-        # 現在のフォルダの中の全ファイルをZIPファイルに追加する
+        # 現在のディレクトリの中の全ファイルをZIPファイルに追加する
         for filename in filenames:    # ❸
             new_base = os.path.basename(folder) + '_'
             if filename.startswith(new_base) and filename.endswith('.zip'):
