@@ -12,3 +12,6 @@ EZGmail
 EZSheets
 Pillow==9.1.0
 PyAutoGUI
+pyperclip
+PyInputPlus
+pywin32
