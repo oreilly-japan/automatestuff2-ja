@@ -14,7 +14,7 @@ link_elems = soup.select('.package-snippet')
 # 各結果をブラウザのタブで開く
 num_open = min(5, len(link_elems))
 for i in range(num_open):
-    url_to_open = 'http://pypi.org' + link_elems[i].get('href')
+    url_to_open = 'https://pypi.org' + link_elems[i].get('href')
     print('Opening', url_to_open)
     webbrowser.open(url_to_open)
 
