@@ -14,7 +14,8 @@ APPID='0123456789abcdef0123456789abcdef'
 assert APPID != '', 'APPIDを定義してください。'
 
 # OpenWeatherMap.orgのAPIからJSONデータをダウンロードする
-url =f'http://api.openweathermap.org/data/2.5/forecast/daily?q={location}&cnt=3&appid={APPID}'
+url = ('https://api.openweathermap.org/data/2.5/forecast/daily?'
+       + f'q={location}&cnt=3&appid={APPID}')
 response = requests.get(url)
 response.raise_for_status()
 
