@@ -23,6 +23,6 @@ for question_number in range(number_of_questions):
         print('正解!')
         correct_answers += 1
 
-    time.sleep(1) # Brief pause to let user see the result.
+    time.sleep(1) # ユーザーが結果を読めるように小休止
 
 print(f'得点: {correct_answers} / {number_of_questions}')
