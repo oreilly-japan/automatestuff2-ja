@@ -9,12 +9,12 @@ from backports import ssl  # gmailに必要
 logging.basicConfig(filename='torrentStarterLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # 以下の変数を設定してください。
-MY_EMAIL = 'my_commander@gmail.com' # このメールからのみ応答する
-BOT_EMAIL = 'my_bot@gmail.com'  # ボットのメールアドレス
+MY_EMAIL = 'YOUR_MAIL_ADDRESS' # このメールからのみ応答する
+BOT_EMAIL = 'BOT_MAIL_ADDRESS'  # ボットのメールアドレス
 BOT_EMAIL_PASSWORD = 'my_bot_password'
-IMAP_SERVER = 'imap.gmail.com'
-SMTP_SERVER = 'imap.gmail.com'
-SMTP_PORT = 465
+IMAP_SERVER = 'IMAP_SERVER' # IMAPサーバーのアドレスを設定してください
+SMTP_SERVER = 'YOUR_SMTP'     # SMTPサーバアドレスを設定
+SMTP_PORT = 587               # SMTPサーバポート番号を設定
 # Torrentのプログラムパス
 TORRENT_PROGRAM = 'C:\\Program Files (x86)\\qBittorrent\\qbittorrent.exe'
 
