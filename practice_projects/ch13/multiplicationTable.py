@@ -11,8 +11,8 @@ n = int(sys.argv[1])
 
 wb = openpyxl.Workbook()
 sheet = wb.active
-normal_font = Font(size=24)          # 通常フォント
-bold_font = Font(size=24, bold=True) # 太字フォント
+normal_font = Font(size=12)          # 通常フォント
+bold_font = Font(size=12, bold=True) # 太字フォント
 
 # 行見出し
 for i in range(1, n + 1):
