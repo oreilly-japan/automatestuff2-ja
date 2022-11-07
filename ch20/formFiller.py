@@ -50,7 +50,7 @@ for person in form_data:
 
     # RoboCop欄を選択する
     robocop = person['robocop'] # ❸
-    pyautogui.write([' '] + ['right'] * (robocop-1) + '\t'*2, 0.5)  # ❹
+    pyautogui.write([' '] + ['right'] * (robocop-1) + ['\t']*2, 0.5)  # ❹
 
     # Additional Comments欄を入力する
     mywrite(person['comments'])
