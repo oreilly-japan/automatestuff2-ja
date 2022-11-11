@@ -11,9 +11,9 @@ twilio
 EZGmail
 EZSheets
 Pillow==9.2.0
-pyobjc-framework-Quartz==8.5
-pyobjc-core==8.5
-pyobjc==8.5
+pyobjc-framework-Quartz
+pyobjc-core
+pyobjc
 PyAutoGUI
 pyperclip
 PyInputPlus
