@@ -10,4 +10,4 @@ messages = ['確かにそうだ',
     '見通しはそれほどよくない',
     'とても疑わしい']
 
-print(messages[random.randint(0, len(messages) - 1)])
+print(random.choice(messages))
